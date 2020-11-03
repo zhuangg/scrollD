@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #app{
+            width: 80%;
+            height: 5000px;
+            background: aquamarine;
+            border: 1px solid red;
+            margin: 0 auto;
+            overflow: scroll;
+        }
+        #box{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="app"></div>
+    </div>
+</body>
+</html>
+<script>
+    window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+        console.log(scrollTop);
+    })
+</script>
