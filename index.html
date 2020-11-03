@@ -16,17 +16,25 @@
             height: 100%;
              overflow: scroll;
         }
+        #avl{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            font-size: 28px;
+        }
     </style>
 </head>
 <body>
     <div id="box">
         <div id="app"></div>
     </div>
+    <div id="val"></div>
 </body>
 </html>
 <script>
     window.addEventListener('scroll', function() {
         var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
         console.log(scrollTop);
+        document.getElementById('val').innerHTML = scrollTop
     })
 </script>
